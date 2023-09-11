@@ -4,14 +4,14 @@
 #include <string.h>
 
 int main(void) {
-    char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-    ssize_t len = strlen(message);
+har *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+ssize_t len = strlen(message);
 
-    if (write(2, message, len) != len) {
-        perror("write");
-        exit(1);
-    }
+if (write(2, message, len) != len) {
+perror("write");
+exit(1);
+}
 
-    return 1;
+return 1;
 }
 
