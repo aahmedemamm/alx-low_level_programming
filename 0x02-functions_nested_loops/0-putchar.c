@@ -1,10 +1,20 @@
-// Online C compiler to run C program online
-#include <stdio.h>
+#include "main.h"
 
-int main() {
-    char l[]= "_putchar"; {
-    // Write C code here
-    printf("%s \n" , l);
-}
-    return 0;
+/**
+ * main - Entry point
+ * Description: prints _putchar using putchar prototype
+ *
+ * Return: Always 0 (Success)
+*/
+
+int main (void)
+{
+	char str[] = "_putchar";
+	int ch;
+
+	for (ch = 0; ch < 8; ch++)
+		_putchar(str[ch]);
+	_putchar ('\n')
+
+	return(0);
 }
